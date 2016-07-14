@@ -23,7 +23,8 @@ public class MyPhoneBook {
 
     public void printPhoneBook() {
         for (PhoneNumber phoneNumber : phoneNumbers)
-            System.out.println(phoneNumber);
+            if (phoneNumber != null)
+                System.out.println(phoneNumber);
     }
 
     ;
